@@ -1,0 +1,215 @@
+/* page styles */
+.ax-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* carousel styles */
+.carousel {
+  --carousel-height: 100px;
+  --carousel-width: 1200px;
+  --carousel-item-height: 170px;
+  --carousel-item-width: auto;
+  width: 100%;
+  position: relative;
+  top: 4rem;
+}
+
+.carousel-container {
+  align-items: center;
+  display: flex;
+  min-height: var(--carousel-height);
+  margin: 0 auto;
+  max-width: var(--carousel-width);
+  position: relative;
+}
+
+.carousel-item {
+  height: var(--carousel-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--carousel-item-width);
+  z-index: 0;
+}
+
+.carousel-item-1 {
+  left: 15%;
+  opacity: 0.4;
+}
+
+.carousel-item-2,
+.carousel-item-4 {
+  height: calc(var(--carousel-item-height) * 1.5);
+  opacity: 1;
+  width: calc(var(--carousel-item-width) * 1.5);
+  z-index: 1;
+}
+
+.carousel-item-2 {
+  left: 30%;
+  opacity: 0.6;
+}
+
+.carousel-item-3 {
+  height: calc(var(--carousel-item-height) * 2);
+  opacity: 1;
+  left: 50%;
+  width: calc(var(--carousel-item-width) * 2);
+  z-index: 2;
+}
+
+.carousel-item-4 {
+  left: 70%;
+  opacity: 0.6;
+}
+
+.carousel-item-5 {
+  left: 85%;
+  opacity: 0.4;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+  bottom: 9rem;
+}
+
+/* carousel button styles */
+.carousel-control {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 50px;
+  margin: 0 20px;
+  position: relative;
+  transform: scale(1.5);
+  transition: transform 0.5s ease-out;
+  outline: none;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+}
+.carousel-control:nth-child(1) {
+  background-image: url("../img/portafolio/f-izquierda.png");
+}
+.carousel-control:nth-child(2) {
+  background-image: url("../img/portafolio/f-derecha.png");
+}
+.carousel-control:hover {
+  transform: scale(1.3);
+}
+
+/* previous button */
+.carousel-control-previous::after,
+.carousel-control-previous::before {
+  box-sizing: border-box;
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+  background: transparent;
+}
+.carousel-control-previous::before {
+  right: 11px;
+  width: 2px;
+  background: transparent;
+}
+/* }
+.carousel-control-previous::after {
+  border-bottom: 4px solid transparent;
+  border-right: 5px solid;
+  border-top: 4px solid transparent;
+  right: 5px;
+  width: 0;
+} */
+
+/* next button */
+.carousel-control-next::after,
+.carousel-control-next::before {
+  box-sizing: border-box;
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+}
+.carousel-control-next::before {
+  border-radius: 2px;
+  left: 11px;
+  width: 2px;
+}
+/* .carousel-control-next::after {
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid;
+  border-top: 4px solid transparent;
+  left: 5px;
+  width: 0;
+} */
+
+/* play button */
+.carousel-control-play::before {
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  border-top: 5px solid transparent;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 0;
+}
+
+/* pause button */
+.carousel-control-play.playing::before {
+  border-bottom: 0;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 0;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 6px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+}
+
+/* add button */
+.carousel-control-add::after,
+.carousel-control-add::before {
+  box-sizing: border-box;
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 10px;
+}
+.carousel-control-add::after {
+  height: 10px;
+  left: 8px;
+  top: 4px;
+  width: 2px;
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+}
+@media screen and (min-width: 1400px) and (max-width: 1450px) {
+}
+@media only screen and (min-width: 1452px) {
+  .carousel {
+    --carousel-height: 100px;
+    --carousel-width: 1500px;
+    --carousel-item-height: 200px;
+    --carousel-item-width: auto;
+    width: 100%;
+    position: relative;
+    top: 4rem;
+  }
+}

@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>KOF Onboarding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/coca-icon.png">
+  <link rel="stylesheet" href="assets/css/w3.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/pushin.min.css" />
+  <link rel="stylesheet" href="assets/css/style_index.css" />
+  <link rel="stylesheet" href="assets/css/styles_new.css" />
+  <link rel="stylesheet" href="assets/css/gsapAnimations.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+
+  <style>
+    .pushin {
+      width: 100%;
+      height: 3500px;
+      position: relative;
+    }
+
+    .inm_circleWhite {
+      width: 10%;
+      position: absolute;
+      top: 36%;
+      right: 12%;
+      transform: scale(1);
+    }
+
+    .inm_circleW2 {
+      width: 6%;
+      position: absolute;
+      top: 40%;
+      left: 12%;
+      transform: scale(1);
+    }
+
+    .inm_circleGray {
+      width: 20%;
+      position: absolute;
+      bottom: 46%;
+      left: 28%;
+      transform: scale(1);
+    }
+
+    .inm_halfUp {
+      width: 14%;
+      position: absolute;
+      bottom: 52%;
+      right: 0%;
+      transform: scale(1);
+    }
+
+    .inm_halfDown {
+      width: 22%;
+      position: absolute;
+      bottom: 37%;
+      left: 0%;
+      transform: scale(1);
+    }
+
+    .inm_red {
+      width: 100%;
+      position: absolute;
+      bottom: 36.5%;
+      left: 0;
+      transform: scale(1);
+    }
+
+    .inm_people {
+      width: 60%;
+      position: absolute;
+      bottom: 37%;
+      left: 20%;
+      transform: scale(1);
+    }
+
+    .inm_white {
+      width: 60%;
+      position: absolute;
+      bottom: 38%;
+      left: 20%;
+      transform: scale(1);
+    }
+
+    .inm_title {
+      width: 62%;
+      position: absolute;
+      bottom: 41%;
+      left: 7%;
+      transform: scale(1);
+    }
+
+    .txt_board {
+      width: 40%;
+      position: absolute;
+      bottom: 46.7%;
+      left: 40%;
+      transform: scale(1);
+    }
+
+    .red_back {
+      background: linear-gradient(#e61b1f, #9d1915);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="advertencia">
+    <p>Por favor, gira tu dispositivo para ver el contenido.</p>
+  </div>
+  <div class="contenido-visible">
+    <div id="loading_screen">
+      <!-- <img id="load_back" src="assets/img/inmersion/layer_superior.png" alt /> -->
+      <img id="load_img" src="assets/img/icons/loader.gif" alt />
+      <div id="load_text">
+        <p class="loadtxt">Cargando...</p>
+      </div>
+    </div>
+
+    <img class="music" src="assets/img/icons/on.png" />
+    <img src="assets/img/icons/scroll_down.gif" class="mouse" />
+    <div>
+      <input type="checkbox" id="nav-toggler" class="fas fa-bars" />
+      <label for="nav-toggler" class="nav-icon-label"><i class="fas fa-bars"></i></label>
+
+      <nav class="navbar">
+        <main class="main">
+          <div class="container-nav">
+            <div class="accordion">
+              <div class="accordion-item">
+                <h3 class="title" data-text="¿Quiénes somos?">
+                  ¿Quiénes somos?
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_1" class="paragraph">Coca-Cola FEMSA</a>
+                <a href="#conte_2" class="paragraph">Estructura FEMSA y divisiones</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Coca-Cola FEMSA en el tiempo">
+                  Coca-Cola FEMSA en el tiempo
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_3" class="paragraph">Línea del tiempo</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Región y Capital Humano">
+                  Región y Capital Humano
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_4" class="paragraph">Nuestra región</a>
+                <a href="#conte_5" class="paragraph">Capital humano</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Cultura KOF">
+                  Cultura KOF
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_6" class="paragraph">Propósito</a>
+                <a href="#conte_6" class="paragraph">Visión</a>
+                <a href="#conte_7" class="paragraph">Principios KOF</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Nuestro negocio">
+                  Nuestro negocio
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_11" class="paragraph">¿Cómo lo hacemos? Nuestro negocio y sus componentes
+                </a>
+                <a href="#conte_12" class="paragraph">Zoom al Paso a paso</a>
+                <a href="#conte_13" class="paragraph">Descarga nuestro glosario</a>
+                <a href="#conte_14" class="paragraph">Accede a nuestros productos en cada región</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Estrategia">
+                  Estrategia
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_16" class="paragraph">Prioridades estratégicas</a>
+                <a href="#conte_20" class="paragraph">DEI</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Código de ética & Compliance">
+                  Código de ética & Compliance
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_23" class="paragraph">Codigo de ética</a>
+                <a href="#conte_27" class="paragraph">Compliance</a>
+              </div>
+              <div class="accordion-item">
+                <h3 class="title" data-text="Tu desarrollo y experiencia dentro de KOF">
+                  Tu desarrollo y experiencia dentro de KOF
+                  <i class="fas fa-chevron-down"></i>
+                </h3>
+                <a href="#conte_33" class="paragraph">Bienestar integral</a>
+                <a href="#conte_35" class="paragraph">Ciclo de desempeño</a>
+                <a href="#conte_37" class="paragraph">Herramientas y plataformas globales</a>
+                <a href="#conte_41" class="paragraph">Capacitación</a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="background-image"></div>
+      </nav>
+    </div>
+
+    <main>
+      <section class="animatePushin">
+        <div class="pushin section__card" id="seccion_1">
+          <div class="pushin-scene">
+            <div class="pushin-composition red_back">
+              <div class="pushin-layer layer-1" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_circleW2" src="assets/img/Inmersion_new/white1.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-1" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_halfDown" src="assets/img/Inmersion_new/half_down.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-2" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_red" src="assets/img/Inmersion_new/rojo.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-3" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_title" src="assets/img/Inmersion_new/title.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-4" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_people" src="assets/img/Inmersion_new/monos.png" />
+              </div>
+              <div class="pushin-layer layer-5" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="10">
+                <img class="inm_white" src="assets/img/Inmersion_new/elipse_base.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-7" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="5">
+                <img class="inm_circleGray" src="assets/img/Inmersion_new/gray2.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-8" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_halfUp" src="assets/img/Inmersion_new/half_up.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-9" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="1">
+                <img class="inm_circleWhite" src="assets/img/Inmersion_new/white2.png" alt="" />
+              </div>
+              <div class="pushin-layer layer-10" data-pushin-transitions="false" data-pushin-from="0" tabindex="0"
+                data-pushin-speed="2">
+                <img class="capainterior" src="assets/img/Inmersion_new/base.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contenedor-base gsap_grlas" id="conte_1">
+          <img src="assets/img/fondo.png" style="visibility: hidden; width: 100%" alt />
+          <!-- <img src="assets/img/somos/rojo.png" class="seccion_2_plecaNube" /> -->
+          <div class="container" id="container_1">
+            <h1 class="textPrincipal">
+              <span class="text textFontSize__quienes">¿Quiénes
+                <p class="animateHover">¿Quiénes</p>
+              </span>
+              <span class="text_span textFontSize__somos">&nbsp; &nbsp; &nbsp; somos?</span>
+            </h1>
+          </div>
+          <img src="assets/img/somos/txt1.png" class="somos_5" data-aos="fade-right" />
+          <img src="assets/img/somos/logo.gif" alt="" class="logo_coca_somos" data-aos="zoom-in" />
+          <img src="assets/img/somos/experta.png" class="somos_6" data-aos="zoom-in" />
+          <!-- <img src="assets/img/icons/btn_vide.png" alt="" id="btn_quienesSomos_1" class="btn_quienesSomos absolute animated heartBeat infinite" data-aos="fade-left" /> -->
+
+        </div>
+        <div class="contenedor-base" id="conte_2">
+          <img src="assets/img/fondo.png" style="visibility: hidden; width: 100%" alt />
+          <div class="container_nuestra" id="container_2">
+            <h1 class="textPrincipal">
+              <span class="text_nuestra textFontSize__nuestra">Nuestra</span>
+              <span class="text_estructura textFontSize__estructura">Estructura</span>
+            </h1>
+          </div>
+          <!-- <img class="struc_instruc" src="assets/img/estructura/instruc.png" alt data-aos="fade-left"
+            data-aos-once="true" /> -->
+          <img class="struc_lines" src="assets/img/estructura/lineas.png" alt data-aos="flip-left"
+            data-aos-once="true" />
+          <div class="contenedor_sliderInfiniy">
+            <div class="slider" data-aos="zoom-in" data-aos-once="true" data-aos-delay="300">
+              <div class="slide-track">
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo1.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo2.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo3.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo4.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo5.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo7.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo1.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo2.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo3.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo4.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo5.png" />
+                </div>
+                <div class="slide">
+                  <img class="slide_image" src="assets/img/estructura/logo7.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="struc_txt" src="assets/img/estructura/txt.png" alt data-aos="fade-up" data-aos-once="true" />
+          <img class="hide struc clic_1_logos" src="assets/img/estructura/clic1/logos.png" alt />
+          <img class="hide struc clic_1_txt" src="assets/img/estructura/clic1/txt.png" alt />
+          <img class="hide struc clic_2_logos" src="assets/img/estructura/clic2/logos.png" alt />
+          <img class="hide struc clic_2_txt" src="assets/img/estructura/clic2/txt.png" alt />
+          <img class="hide struc clic_3_logos" src="assets/img/estructura/clic3/logos.png" alt />
+          <img class="hide struc clic_3_txt" src="assets/img/estructura/clic3/txt.png" alt />
+          <img class="hide struc clic_4_logos" src="assets/img/estructura/clic4/logos.png" alt />
+          <img class="hide struc clic_4_txt" src="assets/img/estructura/clic4/txt.png" alt />
+          <img class="hide struc clic_5_logos" src="assets/img/estructura/clic5/logos.png" alt />
+          <img class="hide struc clic_5_txt" src="assets/img/estructura/clic5/txt.png" alt />
+
+          <img id="btn_nuesStruct_1" src="assets/img/estructura/clic1/active.png" data-aos="zoom-in"
+            data-aos-once="true" data-aos-delay="2500" alt class="clic btn_nuesStruct elem_click w3-opacity" />
+          <img id="btn_nuesStruct_2" src="assets/img/estructura/clic2/active.png" data-aos="zoom-in"
+            data-aos-once="true" data-aos-delay="2600" alt class="clic btn_nuesStruct elem_click w3-opacity" />
+          <img id="btn_nuesStruct_3" src="assets/img/estructura/clic3/active.png" data-aos="zoom-in"
+            data-aos-once="true" data-aos-delay="2700" alt class="clic btn_nuesStruct elem_click w3-opacity" />
+          <img id="btn_nuesStruct_4" src="assets/img/estructura/clic4/active.png" data-aos="zoom-in"
+            data-aos-once="true" data-aos-delay="2800" alt class="clic btn_nuesStruct elem_click w3-opacity" />
+          <img id="btn_nuesStruct_5" src="assets/img/estructura/clic5/active.png" data-aos="zoom-in"
+            data-aos-once="true" data-aos-delay="2900" alt class="clic btn_nuesStruct elem_click w3-opacity" />
+          <div style="overflow: hidden" class="curveOnda_estructura">
+            <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="
+                  fill: #f6f6f6;
+                  width: 143%;
+                  height: 130px;
+                  transform: rotate(180deg);
+                ">
+              <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25" />
+              <path
+                d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                opacity=".5" />
+              <path
+                d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_3">
+          <div style="overflow: hidden" class="curveOnda_lineTime">
+            <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"
+              style="fill: #f6f6f6; width: 143%; height: 130px">
+              <path
+                d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+                opacity=".25" />
+              <path
+                d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+                opacity=".5" />
+              <path
+                d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+            </svg>
+          </div>
+          <img src="assets/img/tiem_linea/FONDO.jpg" style="width: 100%; z-index: -1;" alt />
+          <img src="assets/img/tiem_linea/lin_centro.png" alt class="elem_info lineTime" />
+          <div class="container_botella">
+            <div class="botella_container">
+              <div class="container_botellita" data-aos="fade-left">
+                <img src="assets/img/tiem_linea/botella.png" class="botellitaImg" />
+              </div>
+              <div class="container_texto" id="container_3">
+                <h1 class="textPrincipal">
+                  <span class="text_nuestraR textFontSize__nuestraR">Línea de</span>
+                  <span class="text_region textFontSize__region">Tiempo</span>
+                </h1>
+              </div>
+              <div class="container_scroll">
+                <img src="assets/img/tiem_linea/scroll.png" class="scrolImg" />
+              </div>
+            </div>
+          </div>
+          <img id="numTime_1" src="assets/img/tiem_linea/1979_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_2" src="assets/img/tiem_linea/1993_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_3" src="assets/img/tiem_linea/1994_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_4" src="assets/img/tiem_linea/2003_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_5" src="assets/img/tiem_linea/2007_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_6" src="assets/img/tiem_linea/2010_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_7" src="assets/img/tiem_linea/2011_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_8" src="assets/img/tiem_linea/2012_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_9" src="assets/img/tiem_linea/2013_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_10" src="assets/img/tiem_linea/2015_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_11" src="assets/img/tiem_linea/2016_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_12" src="assets/img/tiem_linea/2017_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_13" src="assets/img/tiem_linea/2018_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_14" src="assets/img/tiem_linea/2021_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_15" src="assets/img/tiem_linea/2022_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="numTime_16" src="assets/img/tiem_linea/2023_.png" class="elem_info numTime" data-aos="zoom-in">
+          <img id="info_1979" src="assets/img/tiem_linea/1979.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_1993" src="assets/img/tiem_linea/1993.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_1994" src="assets/img/tiem_linea/1994.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2003" src="assets/img/tiem_linea/2003.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2007" src="assets/img/tiem_linea/2007.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2010" src="assets/img/tiem_linea/2010.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2011" src="assets/img/tiem_linea/2011.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2012" src="assets/img/tiem_linea/2012.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2013" src="assets/img/tiem_linea/2013.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2015" src="assets/img/tiem_linea/2015.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2016" src="assets/img/tiem_linea/2016.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2017" src="assets/img/tiem_linea/2017.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2018" src="assets/img/tiem_linea/2018.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2021" src="assets/img/tiem_linea/2021.png" class="elem_info info_hist" data-aos="fade-right" />
+          <img id="info_2022" src="assets/img/tiem_linea/2022.png" class="elem_info info_hist" data-aos="fade-left" />
+          <img id="info_2023" src="assets/img/tiem_linea/2023.png" class="elem_info info_hist" data-aos="fade-right" />
+        </div>
+        <div class="contenedor-base" id="conte_4">
+          <div class="container_latinoamerica">
+            <div class="latinoamerica_contenido" id="container_4">
+              <div class="contenido_unoTextos">
+                <div class="unoTextos_grid">
+                  <h1 class="textPrincipal">
+                    <span class="text_mapaLatinNuestra textFontSize__mapaLatinNuestra">Nuestra</span>
+                    <span class="text_mapaLatinRegion textFontSize__mapaLatinRegion">Región</span>
+                  </h1>
+                </div>
+                <img src="assets/img/nuest_reg/parte_1/text.png" class="text__imgNuestraRegion" data-aos="zoom-in" />
+              </div>
+              <div class="contenido_paises">
+                <div class="angry-grid">
+                  <div class="swiper-container swiper-latin swiper" data-aos="zoom-in">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_1.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_1.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_2.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_2.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_3.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_3.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_4.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_4.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_5.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_5.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_6.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_6.png" class="carru_text" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_conetLatin">
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/pais_7.png" class="carru_pais" />
+                          <img src="assets/img/nuest_reg/parte_1/carrusel/text_7.png" class="carru_text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cont_swiperPag">
+                      <div class="swiper-button-next animated heartBeat infinite"></div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenido_informativo">
+              <div class="informativo_grid">
+                <div class="" data-aos="zoom-in-down" data-aos-delay="0" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/poblacion/icono.gif" class="grid_icono" />
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/poblacion/numero.png" class="grid_numero grid_numero_1" />
+                </div>
+                <div class="" data-aos="zoom-in-up" data-aos-delay="400" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/poblacion/text.png" class="grid_text" />
+                </div>
+              </div>
+              <div class="informativo_grid">
+                <div class="" data-aos="zoom-in-down" data-aos-delay="0" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/icono.gif" class="grid_icono" />
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/numero.png"
+                    class="grid_numero grid_numero_2" />
+                </div>
+                <div class="" data-aos="zoom-in-up" data-aos-delay="400" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/text.png" class="grid_text" />
+                </div>
+              </div>
+              <div class="informativo_grid">
+                <div class="" data-aos="zoom-in-down" data-aos-delay="0" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/plantas/icono.gif" class="grid_icono" />
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/plantas/numero.png" class="grid_numero grid_numero_3" />
+                </div>
+                <div class="" data-aos="zoom-in-up" data-aos-delay="400" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/plantas/text.png" class="grid_text" />
+                </div>
+              </div>
+              <div class="informativo_grid">
+                <div class="" data-aos="zoom-in-down" data-aos-delay="0" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/icono.gif" class="grid_icono" />
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/numero.png"
+                    class="grid_numero grid_numero_4" />
+                </div>
+                <div class="" data-aos="zoom-in-up" data-aos-delay="400" data-aos-offset="0">
+                  <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/text.png" class="grid_text" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base contenedor_capitalHumano" id="conte_5">
+          <img src="assets/img/capital_humano/titulo.png" alt="" id="titulo_ch" />
+          <img src="assets/img/capital_humano/logo.png" alt="" id="paises_ch" />
+          <img src="assets/img/capital_humano/tabla.gif" alt="" id="tabla_ch" />
+          <img src="assets/img/capital_humano/estadio.gif" alt="" id="estadio_ch" />
+          <img src="assets/img/capital_humano/somos.png" alt="" id="texto_ch" />
+          <img src="assets/img/capital_humano/texto.png" alt="" id="info_ch" />
+        </div>
+        <div class="contenedor-base" id="conte_6">
+          <div class="fondo_blanco"></div>
+          <div class="contenedor_proposito">
+            <div class="contenedor_texto_propositos">
+              <div class="nuestro_proposito">
+                <img src="assets/img/proposito/nuestro_proposito.png" class="titulo_proposito_1" data-aos="zoom-in" />
+                <img src="assets/img/proposito/txt_1.png" class="txt_proposito_1" data-aos="fade-left"
+                  data-aos-delay="100" />
+              </div>
+              <div class="nuestra_vision">
+                <img src="assets/img/proposito/nuestra_vision.png" class="titulo_proposito_2" data-aos="zoom-in" />
+                <img src="assets/img/proposito/txt_2.png" class="txt_proposito_2" data-aos="fade-left"
+                  data-aos-delay="100" />
+              </div>
+            </div>
+            <div class="principios_kof">
+              <img src="assets/img/proposito/sombra.png" class="sombra_principios" />
+              <div id="titulo_principios" class="titulo_principios">
+                <img src="assets/img/proposito/principios_kof.png" data-aos="zoom-in" />
+              </div>
+              <div id="principio_1" class="principio_kof">
+                <img src="assets/img/proposito/principio_1.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_2" class="principio_kof">
+                <img src="assets/img/proposito/principio_2.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_3" class="principio_kof">
+                <img src="assets/img/proposito/principio_3.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_4" class="principio_kof">
+                <img src="assets/img/proposito/principio_4.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_5" class="principio_kof">
+                <img src="assets/img/proposito/principio_5.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_6" class="principio_kof">
+                <img src="assets/img/proposito/principio_6.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_7" class="principio_kof">
+                <img src="assets/img/proposito/principio_7.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_8" class="principio_kof">
+                <img src="assets/img/proposito/principio_8.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_9" class="principio_kof">
+                <img src="assets/img/proposito/principio_9.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+              <div id="principio_10" class="principio_kof">
+                <img src="assets/img/proposito/principio_10.png" data-aos="zoom-in" data-aos-delay="200" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base contenedor_principios" id="conte_7">
+          <img src="assets/img/principios/titulo.png" id="titulo_seccion_principios" data-aos="fade-right" />
+          <img src="assets/img/icons/ints_clic.png" class="principios_inst absolute" data-aos="zoom-in" />
+
+          <div id="cuerpo_principios_1" class="cuerpo_principios" alt="">
+            <img src="assets/img/principios/cuerpo_rojo.png" class="imagen_cuerpo" data-aos="zoom-in" />
+            <img src="assets/img/principios/cliente_primero.png" alt="" id="cliente_primero" class="btn_modal_principio"
+              data-aos="zoom-in" data-aos-delay="200" />
+          </div>
+          <img src="assets/img/principios/icono_rojo.png" id="btn_principios_1" class="btn_principios" alt=""
+            data-aos="zoom-in" />
+
+          <div id="cuerpo_principios_2" class="cuerpo_principios" alt="">
+            <img src="assets/img/principios/cuerpo_negro.png" class="imagen_cuerpo" alt="" data-aos="zoom-in" />
+            <img src="assets/img/principios/valorar_gente.png" data-aos="zoom-in" data-aos-delay="200"
+              id="valorar_gente" class="btn_modal_principio" />
+            <img src="assets/img/principios/lo_correcto.png" data-aos="zoom-in" data-aos-delay="200" id="lo_correcto"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/fundador.png" data-aos="zoom-in" data-aos-delay="200" id="fundador"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/crecimiento.png" data-aos="zoom-in" data-aos-delay="200" id="crecimiento"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/seguridad.png" data-aos="zoom-in" data-aos-delay="200" id="seguridad_psic"
+              class="btn_modal_principio" />
+          </div>
+          <img src="assets/img/principios/icono_negro.png" id="btn_principios_2" class="btn_principios"
+            data-aos="zoom-in" />
+
+          <div id="cuerpo_principios_3" class="cuerpo_principios" alt="">
+            <img src="assets/img/principios/cuerpo_gris.png" class="imagen_cuerpo" data-aos="zoom-in" />
+            <img src="assets/img/principios/trabajar_exc.png" data-aos="zoom-in" data-aos-delay="200" id="trabajar_exc"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/apalancar.png" data-aos="zoom-in" data-aos-delay="200" id="apalancar"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/actuar_ag.png" data-aos="zoom-in" data-aos-delay="200" id="actuar_ag"
+              class="btn_modal_principio" />
+            <img src="assets/img/principios/entregar_res.png" data-aos="zoom-in" data-aos-delay="200" id="entregar_res"
+              class="btn_modal_principio" />
+          </div>
+          <img src="assets/img/principios/icono_gris.png" id="btn_principios_3" class="btn_principios"
+            data-aos="zoom-in" />
+        </div>
+        <div class="contenedor-base contenedor_noTePierdas" id="conte_8">
+          <img src="assets/img/rituales/textura.png" alt="" class="" id="textura_rituales_i" data-aos="fade-right" />
+          <img src="assets/img/rituales/chica.png" alt="" id="persona_rituales_i" data-aos="zoom-in" />
+          <img src="assets/img/rituales/texto.png" alt="" id="texto_rituales_i" data-aos="fade-left" />
+        </div>
+        <div class="fondo_blanco" id="conte_9">
+          <img src="assets/img/rituales/textura_2.png" alt="" id="textura_rituales" data-aos="fade-right" />
+          <img src="assets/img/rituales/titulo.png" alt="" id="titulo_rituales" data-aos="zoom-in" />
+          <img src="assets/img/rituales/texto_2.png" alt="" id="texto_rituales" data-aos="zoom-in" />
+          <img src="assets/img/rituales/all_hands.png" alt="" id="allHands_rituales" data-aos="zoom-in" />
+          <img src="assets/img/rituales/hagamos_puente.png" alt="" id="puente_rituales" data-aos="zoom-in" />
+          <img src="assets/img/rituales/semanas.png" alt="" id="semanas_rituales" data-aos="zoom-in" />
+          <img src="assets/img/rituales/pleca.png" alt="" id="pleca_rituales" data-aos="zoom-in" />
+        </div>
+        <div class="contenedor-base" id="conte_10">
+          <div class="contenido-nuestroNegocio">
+            <div class="nuestroNegocio_sub1">
+              <img src="assets/img/nuestro-negocio/tlt.png" class="nuestroNegocio_tlt" data-aos="zoom-in" />
+              <img src="assets/img/nuestro-negocio/txt.png" class="nuestroNegocio_txt" data-aos="zoom-in-up" />
+            </div>
+            <div class="nuestroNegocio_sub2">
+              <img src="assets/img/nuestro-negocio/imagen.png" class="nuestroNegocio_img" data-aos="fade-left" />
+            </div>
+            <!-- <img src="assets/img/nuestro-negocio/pleca.png" class="absolute nuestroNegocio_pleca" data-aos="fade-right" /> -->
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="contenedor-base" id="conte_11">
+          <div class="contenido_cadenaValor">
+            <div class="cadenaValor_sub1">
+              <img src="assets/img/scrollHorizontal/tlt.png" class="cadenaValor_tlt" data-aos="zoom-in">
+              <img src="assets/img/scrollHorizontal/indicación.png" class="cadenaValor_inst" data-aos="zoom-in">
+            </div>
+            <div class="cadenaValor_sub2" data-aos="zoom-in">
+              <div class="cadValor_nuestra" id="nuestraCad_1">
+                <img src="assets/img/scrollHorizontal/Planta.png" class="nuestCad_planta">
+                <img src="assets/img/scrollHorizontal/btn_1.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_1">
+                <img src="assets/img/scrollHorizontal/btn_2.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_2">
+                <img src="assets/img/scrollHorizontal/btn_3.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_3">
+                <img src="assets/img/scrollHorizontal/btn_4.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_4">
+                <img src="assets/img/scrollHorizontal/btn_5.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_5">
+                <img src="assets/img/scrollHorizontal/btn_6.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_6">
+                <img src="assets/img/scrollHorizontal/btn_7.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_7">
+                <img src="assets/img/scrollHorizontal/btn_8.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_8">
+                <img src="assets/img/scrollHorizontal/btn_9.png" class="btn_cadenaValor absolute"
+                  id="btn_cadenaValor_9">
+              </div>
+              <div class="cadValor_nuestra" id="nuestraCad_2">
+                <img src="" class="text_cadenaValor" id="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="contenedor-base" id="conte_12">
+          <div class="contenedor__fondo-flecha-ciclo">
+            <img class="flecha-ciclo__intruccion" src="assets/img/cadena-de-valor/clic.png" data-aos="zoom-in" />
+            <div class="cicloContenedor">
+              <div class="flecha-ciclo__cont-flecha-central">
+                <div class="cont-flecha-central__cont-botones">
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_1" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_4.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_2" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_5.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_3" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_6.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_8" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_3.png" />
+                  </div>
+                  <div class="cont-botones__coca"></div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_4" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_7.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_7" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_2.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_6" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_1.png" />
+                  </div>
+                  <div class="cont-botones__coca" data-aos="flip-left">
+                    <img id="btn_ciclo_5" class="btn_ciclo clic w3-opacity"
+                      src="assets/img/cadena-de-valor/boton_8.png" />
+                  </div>
+                </div>
+                <!-- <img class="cont-flecha-centarl__imagen" src="assets/img/cadena-de-valor/flecha-fondo.png" alt=""> -->
+              </div>
+              <div class="flecha-ciclo__cont-contenido">
+                <img src="" class="text_ciclo" id="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_13">
+          <img src="assets/img/glosario/rojo.png" class="glosario__plecaRoja" data-aos="fade-left" />
+          <div class="contenedor-fondo__amplia-conocimiento">
+            <div class="amplia-conocimiento__cont-glosario">
+              <div class="cont-glosario__imagen">
+                <div class="imagen__myCard">
+                  <img class="imagen__glosario" src="assets/img/glosario/glosario.png" data-aos="zoom-in" />
+                </div>
+              </div>
+              <div class="cont-glosario__text">
+                <img class="text__glosario" src="assets/img/glosario/texto.png" alt="" data-aos="fade-right" />
+                <a href="assets/img/glosario/glosario.pdf" download="pdf_definición">
+                  <img class="btn_descarga" src="assets/img/glosario/boton-descarga.png" alt="" data-aos="zoom-in" />
+                </a>
+                <img src="assets/img/glosario/clic.png" class="inst__glosario" data-aos="zoom-in" />
+                <img src="assets/img/glosario/qr_2.png" class="absolute qr_2_escaner" data-aos="zoom-in" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_14">
+          <div class="contenido_nuestroOrigen">
+            <div class="nuestroOrigen_containerText">
+              <img src="assets/img/nuest_reg/parte_3/text_1.png" class="containerText_textPart_1" data-aos="zoom-in" />
+              <img src="assets/img/nuest_reg/parte_3/text_2.png" class="containerText_textPart_2" data-aos="zoom-in" />
+            </div>
+            <div class="nuestroOrigen_containerImage">
+              <img src="assets/img/nuest_reg/parte_3/personas.png" class="containerText_imgPersonas"
+                data-aos="zoom-in-left" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_15">
+          <div class="contenido-futureReady">
+            <div class="futureReady-sub1">
+              <img src="assets/img/future-ready/titulo.png" class="futureReady_titulo" data-aos="fade-right" />
+              <img src="assets/img/future-ready/texto.png" class="futureReady_texto" data-aos="zoom-in" />
+            </div>
+            <div class="futureReady-sub2">
+              <img src="assets/img/future-ready/imagen.png" class="futureReady_img" data-aos="fade-left" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_16">
+          <div class="contenido-prioridadesEstrategicas">
+            <!-- <img src="assets/img/prioridades-estrategicas/sc-2.png" class="basuyra"> -->
+            <img src="assets/img/prioridades-estrategicas/pleca_1.png" class="plecaEst_c absolute"
+              data-aos="fade-left" />
+            <img src="assets/img/prioridades-estrategicas/pleca_2.png" class="plecaEst_h absolute"
+              data-aos="fade-right" />
+            <img src="assets/img/prioridades-estrategicas/circle.png" class="absolute circle_a" data-aos="zoom-in" />
+            <img src="assets/img/prioridades-estrategicas/btn_1.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_1" />
+            <img src="assets/img/prioridades-estrategicas/btn_2.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_2" />
+            <img src="assets/img/prioridades-estrategicas/btn_3.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_3" />
+            <img src="assets/img/prioridades-estrategicas/btn_4.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_4" />
+            <img src="assets/img/prioridades-estrategicas/btn_5.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_5" />
+            <img src="assets/img/prioridades-estrategicas/btn_6.png" class="btn_prioridadesEst absolute"
+              id="btn_prioridadesEst_6" />
+          </div>
+        </div>
+
+        <div class="contenedor-base" id="conte_17">
+          <div class="contenido-basicoUno">
+            <div class="basicoUno" id="basicoUno_1">
+              <div class="basicoUno_carrusel">
+                <div class="swiper swiper-sostenibilidad">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="sostenibilidad__contenido">
+                        <img src="assets/img/slide_73/titulo.png" class="sostenibilidad__contenido--tlt" />
+                        <img src="assets/img/slide_73/text.png" class="sostenibilidad__contenido--txt" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="sostenibilidad__contenido">
+                        <img src="assets/img/slide_71/imagen.png" class="sostenibilidad__contenido--img" />
+                        <img src="assets/img/slide_71/text_1.png" class="sostenibilidad__contenido--txt" />
+                        <img src="assets/img/slide_71/text_2.png" class="sostenibilidad__contenido--txt" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="sostenibilidad__contenido">
+                        <img src="assets/img/slide_72/imagen.png" class="sostenibilidad__contenido--img" />
+                        <img src="assets/img/slide_72/title.png" class="sostenibilidad__contenido--tlt" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+            <div class="basicoUno" id="basicoUno_2">
+              <img src="assets/img/slide_73/animar/1.png" class="animarMarco absolute" id="animarMarco_1"
+                data-aos="zoom-in" data-aos-delay="100" />
+              <img src="assets/img/slide_73/animar/2.png" class="animarMarco absolute" id="animarMarco_2"
+                data-aos="zoom-in" data-aos-delay="300" />
+              <img src="assets/img/slide_73/animar/3.png" class="animarMarco absolute" id="animarMarco_3"
+                data-aos="zoom-in" data-aos-delay="500" />
+              <img src="assets/img/slide_73/animar/4.png" class="animarMarco absolute" id="animarMarco_4"
+                data-aos="zoom-in" data-aos-delay="700" />
+              <img src="assets/img/slide_73/animar/5.png" class="animarMarco absolute" id="animarMarco_5"
+                data-aos="zoom-in" data-aos-delay="900" />
+              <img src="assets/img/slide_73/animar/6.png" class="animarMarco absolute" id="animarMarco_6"
+                data-aos="zoom-in" data-aos-delay="1100" />
+              <img src="assets/img/slide_73/animar/7.png" class="animarMarco absolute" id="animarMarco_7"
+                data-aos="zoom-in" data-aos-delay="1300" />
+              <img src="assets/img/slide_73/animar/text_1.png" class="animarText absolute" id="animarText_1"
+                data-aos="zoom-in" />
+              <img src="assets/img/slide_73/animar/text_2.png" class="animarText absolute" id="animarText_2"
+                data-aos="zoom-in" />
+              <img src="assets/img/slide_73/animar/text_3.png" class="animarText absolute" id="animarText_3"
+                data-aos="zoom-in" />
+              <img src="assets/img/slide_73/animar/line_1.png" class="animarLine absolute" id="animarLine_1"
+                data-aos="zoom-in" />
+              <img src="assets/img/slide_73/animar/line_2.png" class="animarLine absolute" id="animarLine_2"
+                data-aos="zoom-in" />
+              <img src="assets/img/slide_73/animar/line_3.png" class="animarLine absolute" id="animarLine_3"
+                data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_20">
+          <div class="contenido-diversidadEquidad">
+            <div class="diversidadEquidad_sub1">
+              <img src="assets/img/diversidad-equidad/imagen.png" class="divEq_imagen" data-aos="fade-right" />
+            </div>
+            <div class="diversidadEquidad_sub2">
+              <img src="assets/img/diversidad-equidad/tlt.png" class="divEq_tlt" data-aos="zoom-in" />
+              <img src="assets/img/diversidad-equidad/text.png" class="divEq_text" data-aos="zoom-in" />
+            </div>
+            <img src="assets/img/diversidad-equidad/pleca.png" class="divEq_plecaRoja absolute" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_21">
+          <div class="contenido-acciones">
+            <div>
+              <img src="assets/img/acciones/tlt.png" class="acciones_tlt" data-aos="fade-right" />
+              <img src="assets/img/acciones/text.png" class="acciones_text" data-aos="fade-right"
+                data-aos-delay="100" />
+            </div>
+            <img src="assets/img/acciones/imagen.png" class="acciones_img" data-aos="zoom-in" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_22">
+          <div class="contenido-tresPilares">
+            <div class="tresPilares_sub1">
+              <img src="assets/img/tres-pilares/tlt.png" class="tresPilares_sub1_img" data-aos="zoom-in" />
+            </div>
+            <div class="tresPilares_sub2">
+              <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiperSlide" id="swiperSlide_1">
+                      <img src="assets/img/tres-pilares/image_1.png" class="swiperSlide_1_img" data-aos="zoom-in" />
+                      <img src="assets/img/tres-pilares/text_1.png" class="swiperSlide_1_text" data-aos="zoom-in" />
+                      <img src="assets/img/tres-pilares/pleca_1.png" class="absolute swiperSlide_1_pleca"
+                        data-aos="fade-right" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperSlide" id="swiperSlide_2">
+                      <img src="assets/img/tres-pilares/text_2.png" class="swiperSlide_2_text animated zoomIn" />
+                      <img src="assets/img/tres-pilares/image_2.png" class="swiperSlide_2_img animated zoomIn" />
+                      <img src="assets/img/tres-pilares/pleca_2.png"
+                        class="absolute swiperSlide_2_pleca animated zoomIn" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperSlide" id="swiperSlide_3">
+                      <img src="assets/img/tres-pilares/image_3.png" class="swiperSlide_3_img animated zoomIn">
+                      <img src="assets/img/tres-pilares/text_3.png" class="swiperSlide_3_text animated zoomIn">
+                      <img src="assets/img/tres-pilares/pleca_1.png"
+                        class="absolute swiperSlide_3_pleca animated zoomIn">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next animated heartBeat infinite"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_23">
+          <div class="fondo_blanco"></div>
+          <div class="contenedor_seccion_video">
+            <div class="contenedor_video_comportamiento">
+              <img src="assets/img/comportamiento-saludable/texto.png" class="col_1" data-aos="zoom-in" />
+              <img src="assets/img/comportamiento-saludable/persona.png" class="col_2" data-aos="zoom-in" />
+            </div>
+          </div>
+          <div class="contenedor_btn_ver">
+            <img class="btn_compSaludable clic" id="btn_compSaludable_1"
+              src="assets/img/comportamiento-saludable/play.png" data-aos="zoom-in" />
+            <img src="assets/img/comportamiento-saludable/da_click.png" data-aos="zoom-in" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_24">
+          <div class="fondo_blanco"></div>
+          <div class="elem_info contenedor_texto_etica">
+            <img src="assets/img/sistema-integral-etica/titulo.png" data-aos="fade-right" />
+            <img src="assets/img/sistema-integral-etica/texto_1.png" data-aos="fade-left" />
+            <img src="assets/img/sistema-integral-etica/texto_2.png" data-aos="zoom-in" />
+            <img src="assets/img/sistema-integral-etica/texto_3.png" data-aos="zoom-in" />
+          </div>
+
+          <img id="btn_sisEt_1" class="clic btn_sisEt elem_click"
+            src="assets/img/sistema-integral-etica/btn_sisEt_1.png" data-aos="flip-left" />
+          <img id="btn_sisEt_2" class="clic btn_sisEt elem_click"
+            src="assets/img/sistema-integral-etica/btn_sisEt_2.png" data-aos="flip-left" data-aos-delay="200" />
+          <img id="btn_sisEt_3" class="clic btn_sisEt elem_click"
+            src="assets/img/sistema-integral-etica/btn_sisEt_3.png" data-aos="flip-left" data-aos-delay="400" />
+          <img src="assets/img/sistema-integral-etica/instruccion.png" class="elem_info instruccion_etica" alt="" />
+          <img src="assets/img/sistema-integral-etica/flecha.png" class="elem_info flecha_1_etica" alt="" />
+          <img src="assets/img/sistema-integral-etica/flecha.png" class="elem_info flecha_2_etica" alt="" />
+          <img src="assets/img/sistema-integral-etica/textura.png" class="elem_info textura_etica" alt="" />
+        </div>
+        <div class="contenedor-base" id="conte_25">
+          <div class="fondo_blanco"></div>
+          <div class="contenedor_denuncia">
+            <div class="contenedor_texto_denuncia">
+              <img src="assets/img/codigo-etica/titulo.png" data-aos="fade-right" />
+              <img src="assets/img/codigo-etica/texto.png" data-aos="fade-right" />
+            </div>
+
+            <!-- <img src="assets/img/codigo-etica/instrucciones.png" class="elem_info instruccion_denuncia" alt=""> -->
+
+            <div class="contenedor_banderas animated zoomIn delay-2s">
+              <img id="btn_bandera_1" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_1.png" />
+              <img id="btn_bandera_2" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_2.png" />
+              <img id="btn_bandera_3" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_3.png" />
+              <img id="btn_bandera_4" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_4.png" />
+              <img id="btn_bandera_5" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_5.png" />
+              <img id="btn_bandera_6" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_6.png" />
+              <img id="btn_bandera_7" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_7.png" />
+              <img id="btn_bandera_8" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_8.png" />
+              <img id="btn_bandera_9" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_9.png" />
+              <img id="btn_bandera_10" data-aos="zoom-in" class="clic btn_bandera w3-opacity animated pulse infinite"
+                src="assets/img/codigo-etica/bandera_10.png" />
+            </div>
+
+            <div class="contenedor-central__telefono-pais">
+              <div class="celular_blank">
+                <img src="assets/img/codigo-etica/tel_blank.png" class="" data-aos="zoom-in" />
+              </div>
+              <img src="assets/img/codigo-etica/numeros/num_argentina.png" id="tel_pais_1" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_brasil.png" id="tel_pais_2" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_colombia.png" id="tel_pais_3" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_costa_rica.png" id="tel_pais_4" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_guatemala.png" id="tel_pais_5" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_mexico.png" id="tel_pais_6" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_nicaragua.png" id="tel_pais_7" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_panama.png" id="tel_pais_8" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_uruguay.png" id="tel_pais_9" class="tel_pais hide" />
+              <img src="assets/img/codigo-etica/numeros/num_venezuela.png" id="tel_pais_10" class="tel_pais hide" />
+            </div>
+            <div class="mas_info_denuncia">
+              <div class="">
+                <img class="btn_tipEtica animated heartBeat infinite clic" src="assets/img/codigo-etica/FOCO-TIPS.png"
+                  data-aos="zoom-in" />
+                <a href="https://coca-colafemsa.com/wp-content/uploads/2022/09/KOF_Codigo_de_etica_Esp_ALTA_sep_2022.pdf"
+                  target="_blank">
+                  <img class="img__plaqueta-roja" data-aos="zoom-in"
+                    src="assets/img/codigo-etica/DA-CLIC-AL-CODIGO.png" />
+                </a>
+              </div>
+              <div class="texto_link_denuncia">
+                <a href="https://secure.ethicspoint.com/domain/media/es/gui/81102/index.html" target="_blank">
+                  <img src="assets/img/codigo-etica/sitio_web.png" class="texto__enlace" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base contenedor_qr" id="conte_26">
+          <img src="assets/img/qr/titulo.png" id="titulo_qr" data-aos="zoom-in" />
+          <img src="assets/img/qr/qr_espanol.png" id="qr_espanol" data-aos="zoom-in" />
+          <img src="assets/img/qr/qr_portugues.png" id="qr_portugues" data-aos="zoom-in" />
+          <img src="assets/img/qr/persona.png" id="persona_qr" data-aos="zoom-in" data-aos-offset="-150" />
+        </div>
+        <div class="contenedor-base" id="conte_27">
+          <div class="contenido-compliance">
+            <div class="compliance_sub1">
+              <img src="assets/img/compliance/tlt.png" class="compliance_tlt" data-aos="zoom-in" />
+              <img src="assets/img/compliance/txt.png" class="compliance_txt" data-aos="zoom-in" />
+            </div>
+            <div class="compliance_sub2">
+              <img src="assets/img/compliance/image.png" class="compliance_image" data-aos="zoom-in" />
+            </div>
+            <img src="assets/img/compliance/fondo.png" class="absolute compliance_pleca" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_28">
+          <div class="contenido-integridadGlobal">
+            <div class="integridadGlobal_sub1">
+              <img src="assets/img/integridad-global/imagen.png" class="integridadGlobal_img" data-aos="zoom-in" />
+            </div>
+            <div class="integridadGlobal_sub2">
+              <img src="assets/img/integridad-global/text_1.png" class="integridadGlobal_text1" data-aos="zoom-in" />
+              <img src="assets/img/integridad-global/bullets.png" class="integridadGlobal_text2" data-aos="zoom-in" />
+              <img src="assets/img/integridad-global/text_2.png" class="integridadGlobal_text3" data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_29">
+          <div class="contenido-legalCompliance">
+            <div class="legalCompliance_sub1">
+              <img src="assets/img/temas-compliance/tlt.png" class="legalCompliance_text1" data-aos="zoom-in" />
+              <img src="assets/img/temas-compliance/text_1.png" class="legalCompliance_text2" data-aos="zoom-in" />
+            </div>
+            <div class="legalCompliance_sub2">
+              <img src="assets/img/temas-compliance/imagen_2.png" class="legalCompliance_img" data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_30">
+          <div class="contenido-recuerdaCheck">
+            <div class="recuerdaCheck_sub1">
+              <img src="assets/img/temas-compliance/recuerda/recuerda.png" class="recuerdaCheck_info"
+                data-aos="zoom-in" />
+              <img src="assets/img/temas-compliance/recuerda/1.png" class="recuerdaCheck_t1 tAn"
+                data-aos="fade-right" />
+              <img src="assets/img/temas-compliance/recuerda/2.png" class="recuerdaCheck_t2 tAn"
+                data-aos="fade-right" />
+              <img src="assets/img/temas-compliance/recuerda/3.png" class="recuerdaCheck_t3 tAn"
+                data-aos="fade-right" />
+              <img src="assets/img/temas-compliance/recuerda/4.png" class="recuerdaCheck_t4 tAn"
+                data-aos="fade-right" />
+              <img src="assets/img/temas-compliance/recuerda/5.png" class="recuerdaCheck_t5 tAn"
+                data-aos="fade-right" />
+              <img src="assets/img/temas-compliance/recuerda/6.png" class="recuerdaCheck_t6 tAn"
+                data-aos="fade-right" />
+            </div>
+            <div class="recuerdaCheck_sub2">
+              <img src="assets/img/temas-compliance/recuerda/imagen.png" class="recuerdaCheck_img" data-aos="fade-left"
+                data-aos-offset="-150" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_31">
+          <div class="contenido-somosCompliance">
+            <img src="assets/img/temas-compliance/somos/imagen.png" class="somosCompliance_img" data-aos="zoom-in" />
+            <img src="assets/img/temas-compliance/somos/txt.png" class="somosCompliance_txt" data-aos="zoom-in" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_32">
+          <div class="contenido-desarrolloDentro">
+            <div class="desarrolloDentro_sub1">
+              <img src="assets/img/desarrollo-dentro-kof/tlt.png" class="desarrolloDentro_tlt" data-aos="zoom-in" />
+              <img src="assets/img/desarrollo-dentro-kof/text_1.png" class="desarrolloDentro_text1"
+                data-aos="fade-right" />
+              <img src="assets/img/desarrollo-dentro-kof/text_2.png" class="desarrolloDentro_text2"
+                data-aos="fade-right" />
+              <img src="assets/img/desarrollo-dentro-kof/text_3.png" class="desarrolloDentro_text3"
+                data-aos="fade-right" />
+            </div>
+            <div class="desarrolloDentro_sub2">
+              <img src="assets/img/desarrollo-dentro-kof/imagen.png" class="desarrolloDentro_img" data-aos="zoom-in" />
+            </div>
+            <img src="assets/img/desarrollo-dentro-kof/pleca.png" class="absolute desarrolloDentro_pleca"
+              data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_33">
+          <div class="contenido-bienestarBase">
+            <div class="bienestarBase_sub1">
+              <img src="assets/img/bienestarIntegral/tlt.png" class="bienestarBase_tlt" data-aos="fade-right" />
+              <img src="assets/img/bienestarIntegral/text_base.png" class="bienestarBase_txt" data-aos="zoom-in" />
+            </div>
+            <div class="bienestarBase_sub2" data-aos="zoom-in">
+              <img src="assets/img/bienestarIntegral/mono.png" class="biBaseMono" />
+              <!-- <img src="assets/img/bienestarIntegral/base.png" class="biBaseMonoP absolute"> -->
+              <img src="assets/img/bienestarIntegral/btn_1.png" class="absolute biBase" id="biBase_1" />
+              <img src="assets/img/bienestarIntegral/btn_2.png" class="absolute biBase" id="biBase_2" />
+              <img src="assets/img/bienestarIntegral/btn_3.png" class="absolute biBase" id="biBase_3" />
+              <img src="assets/img/bienestarIntegral/btn_4.png" class="absolute biBase" id="biBase_4" />
+              <img src="assets/img/bienestarIntegral/btn_5.png" class="absolute biBase" id="biBase_5" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_34">
+          <div class="contenido-bienestarInter">
+            <div class="bienestarInter_sub1" data-aos="zoom-in">
+              <img src="assets/img/bienestarIntegral/mono.png" class="biBaseInterMono absolute" />
+              <!-- <img src="assets/img/bienestarIntegral/base.png" class="biBaseInterMonoP absolute"> -->
+              <img src="assets/img/bienestarIntegral/btn_1.png" class="absolute btn_bienestarInter w3-opacity"
+                id="btn_bienestarInter_1" />
+              <img src="assets/img/bienestarIntegral/btn_2.png" class="absolute btn_bienestarInter w3-opacity"
+                id="btn_bienestarInter_2" />
+              <img src="assets/img/bienestarIntegral/btn_3.png" class="absolute btn_bienestarInter w3-opacity"
+                id="btn_bienestarInter_3" />
+              <img src="assets/img/bienestarIntegral/btn_4.png" class="absolute btn_bienestarInter w3-opacity"
+                id="btn_bienestarInter_4" />
+              <img src="assets/img/bienestarIntegral/btn_5.png" class="absolute btn_bienestarInter w3-opacity"
+                id="btn_bienestarInter_5" />
+            </div>
+            <div class="bienestarInter_sub2">
+              <img src="" class="text_bienestarInter" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_35">
+          <div class="contenido-cicloDesempeno">
+            <div class="cicloDesempeno_sub1">
+              <img src="assets/img/ciclo-desem/tlt.png" class="cicloDesempeno_sub1_tlt" data-aos="fade-right" />
+              <img src="assets/img/ciclo-desem/txt.png" class="cicloDesempeno_sub1_txt" data-aos="zoom-in" />
+            </div>
+            <div class="cicloDesempeno_sub2">
+              <img src="assets/img/ciclo-desem/imagen.png" class="cicloDesempeno_sub2_img" data-aos="zoom-in" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_36">
+          <div class="contenido-inicioCiclo">
+            <div class="inicioCiclo_sub1">
+              <img src="assets/img/inicioCiclo/parrafo.png" class="inicioCiclo_parrafo" data-aos="zoom-in" />
+            </div>
+            <div class="inicioCiclo_sub2">
+              <div class="inicioCiclo_sub2_sec1">
+                <div class="sec1_ciclo" id="sec1_ciclo_1" data-aos="fade-right">
+                  <img src="assets/img/inicioCiclo/btn_1.png" class="sec1_ciclo_btn" id="sec1_ciclo_btn_1" />
+                  <img src="assets/img/inicioCiclo/text_1.png" class="sec1_ciclo_text" id="sec1_ciclo_text_1" />
+                </div>
+                <div class="sec1_ciclo" id="sec1_ciclo_2" data-aos="fade-right" data-aos-delay="100">
+                  <img src="assets/img/inicioCiclo/btn_2.png" class="sec1_ciclo_btn" id="sec1_ciclo_btn_2" />
+                  <img src="assets/img/inicioCiclo/text_2.png" class="sec1_ciclo_text" id="sec1_ciclo_text_2" />
+                </div>
+                <div class="sec1_ciclo" id="sec1_ciclo_3" data-aos="fade-right" data-aos-delay="200">
+                  <img src="assets/img/inicioCiclo/btn_3.png" class="sec1_ciclo_btn" id="sec1_ciclo_btn_3" />
+                  <img src="assets/img/inicioCiclo/text_3.png" class="sec1_ciclo_text" id="sec1_ciclo_text_3" />
+                </div>
+              </div>
+              <div class="inicioCiclo_sub2_sec2">
+                <img src="assets/img/inicioCiclo/imagen.png" class="inicioCiclo_sub2_sec2_img" data-aos="zoom-in"
+                  data-aos-offset="-150" />
+              </div>
+            </div>
+            <img src="assets/img/inicioCiclo/rojo.png" class="inCiclo_pleca absolute" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_37">
+          <div class="contenido-herramientas">
+            <div class="herramientas_sub1">
+              <img src="assets/img/herramientas/txt.png" class="herramientas_txt" data-aos="zoom-in" />
+            </div>
+            <div class="herramientas_sub2">
+              <img src="assets/img/herramientas/imagen.png" class="herramientas_img" data-aos="zoom-in"
+                data-aos-offset="-150" />
+            </div>
+            <img src="assets/img/herramientas/pleca.png" class="absolute herramientas_pleca" data-aos="fade-right" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_38">
+          <div class="plataformaTalento">
+            <div class="platTalent_sub1">
+              <img src="assets/img/plataformaTalento/imagen.png" class="platTalent_img" data-aos="zoom-in" />
+            </div>
+            <div class="platTalent_sub2">
+              <img src="assets/img/plataformaTalento/tlt.png" class="platTalent_tlt" data-aos="fade-left" />
+              <img src="assets/img/plataformaTalento/txt.png" class="platTalent_txt" data-aos="fade-left" />
+              <img src="assets/img/myKofVideo/btn_video.png" data-aos="zoom-in" id="btn_plataTalento_1"
+                class="btn_plataTalento animated heartBeat infinite" />
+            </div>
+            <img src="assets/img/plataformaTalento/pleca.png" class="absolute platTalent_pleca" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_39">
+          <div class="contenido-myKofVideo">
+            <div class="myKofVideo_sub1">
+              <img src="assets/img/myKofVideo/tlt.png" class="myKofVideo_tlt" data-aos="fade-right" />
+              <img src="assets/img/myKofVideo/text.png" class="myKofVideo_text" data-aos="fade-right" />
+              <img src="assets/img/myKofVideo/btn_video.png" data-aos="zoom-in" id="btn_myKofVid_1"
+                class="btn_myKofVid animated heartBeat infinite" />
+            </div>
+            <div class="myKofVideo_sub2">
+              <img src="assets/img/myKofVideo/imagen.png" class="myKofVideo_imagen" data-aos="zoom-in"
+                data-aos-offset="-150" />
+            </div>
+            <img src="assets/img/myKofVideo/pleca.png" class="absolute myKofVideo_pleca" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_40">
+          <div class="contenido-docManager">
+            <div class="docManager_sub1">
+              <img src="assets/img/docManager/tlt.png" class="docManager_sub1_tlt" data-aos="zoom-in" />
+              <img src="assets/img/docManager/text.png" class="docManager_sub1_text" data-aos="zoom-in" />
+              <a href="https://docmanager.kof.com.mx/KOF/Public/ExternalDMAuthStart.html" class="docManager_link"
+                target="_blank">https://docmanager.kof.com.mx/KOF/Public/ExternalDMAuthStart.html</a>
+            </div>
+            <div class="docManager_sub2">
+              <img src="assets/img/docManager/imagen.png" class="docManager_sub2_img" data-aos="zoom-in"
+                data-aos-offset="-150" />
+            </div>
+            <img src="assets/img/docManager/rojo.png" class="absolute docMan_pleca" data-aos="fade-left" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_41">
+          <div class="contenedor-capacitacion">
+            <div class="capacitacion_sub1">
+              <img src="assets/img/plataforma-talento/txt.png" class="capSub1_text1" data-aos="zoom-in-right" />
+              <img src="assets/img/plataforma-talento/txt_2.png" class="capSub1_text2" data-aos="zoom-in-right" />
+            </div>
+            <div class="capacitacion_sub2">
+              <img src="assets/img/plataforma-talento/imagen.png" class="capSub2_imagen" data-aos="zoom-in"
+                data-aos-offset="-250" />
+            </div>
+            <img src="assets/img/plataforma-talento/rojo.png" class="absolute capSub2_plecaRoja" data-aos="fade-left"
+              data-aos-offset="-250" />
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_42">
+          <div class="contenido-growMindset">
+            <div class="growMindset_cont1" data-aos="zoom-in">
+              <img src="assets/img/universidad-femsa/growth_mindset.png" class="absolute growth_esquema" />
+              <img src="assets/img/universidad-femsa/btn_1.png" class="absolute btn_mindset" id="btn_mindset_1" />
+              <img src="assets/img/universidad-femsa/btn_2.png" class="absolute btn_mindset" id="btn_mindset_2" />
+              <img src="assets/img/universidad-femsa/btn_3.png" class="absolute btn_mindset" id="btn_mindset_3" />
+              <img src="assets/img/universidad-femsa/btn_4.png" class="absolute btn_mindset" id="btn_mindset_4" />
+            </div>
+            <div class="growMindset_cont2">
+              <img src="assets/img/universidad-femsa/tlt.png" class="absolute growMid_tlt" data-aos="zoom-in" />
+              <img src="" class="absolute text_mindset" id="" />
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-base" id="conte_43">
+          <div class="contenido-uniFemsa">
+            <img src="assets/img/aulaKof/tlt.png" class="absolute uniFem_tlt" data-aos="zoom-in" />
+            <img src="assets/img/aulaKof/text.png" class="absolute uniFem_txt" data-aos="fade-right" />
+            <img src="assets/img/aulaKof/imagen.png" class="absolute uniFem_imagen" data-aos="zoom-in" />
+            <img src="assets/img/aulaKof/rojo.png" class="absolute uniFem_rojo" data-aos="fade-right" />
+            <img src="assets/img/aulaKof/bullets.png" class="absolute unifem_txt1" data-aos="fade-left" />
+          </div>
+          <div class="contenedor-base" id="conte_44">
+            <div class="contenido-linkedin">
+              <div class="linkedin_sub1">
+                <img src="assets/img/linkedin/imagen.png" class="linkedin_img" data-aos="zoom-in"
+                  data-aos-offset="-250" />
+              </div>
+              <div class="linkedin_sub2">
+                <img src="assets/img/linkedin/titulo.png" class="linkedin_tlt" data-aos="fade-left" />
+                <img src="assets/img/linkedin/text.png" class="linkedin_txt" data-aos="fade-left" />
+              </div>
+              <img src="assets/img/linkedin/rojo.png" class="linkedin_pleca absolute" />
+            </div>
+          </div>
+          <div class="contenedor-base" id="conte_45">
+            <div class="contenido-cierreTalento">
+              <div class="cierreTalento_sub1">
+                <img src="assets/img/cierre/hombre.png" class="cierreTalent_hom" data-aos="zoom-in-down" />
+                <img src="assets/img/cierre/mujer.png" class="cierreTalent_muj" data-aos="zoom-in-up" />
+              </div>
+              <div class="cierreTalento_sub2">
+                <img src="assets/img/cierre/tlt.png" class="cierreTalent_tlt" data-aos="fade-up-left" />
+                <img src="assets/img/cierre/txt.png" class="cierreTalent_txt" data-aos="fade-up-left" />
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- Modals principios KOF -->
+    <div id="mod_cliente_primero" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_cliente_primero.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_cliente_primero" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+    <div id="mod_valorar_gente" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_valorar_gente.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_valorar_gente" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+    <div id="mod_lo_correcto" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_lo_correcto.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_lo_correcto" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_fundador" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_fundador.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_fundador" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_crecimiento" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_crecimiento.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_crecimiento" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_seguridad_psic" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_seguridad.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_seguridad_psic" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_trabajar_exc" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_trabajar_exc.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_trabajar_exc" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_apalancar" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_apalancar.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_apalancar" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_actuar_ag" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_actuar_ag.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_actuar_ag" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <div id="mod_entregar_res" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div>
+            <img src="assets/img/principios/modal_entregar_res.png" alt="" class="modal_principios" />
+          </div>
+          <img id="cls_entregar_res" class="cclose elem_click cls_principios w3-display-topright"
+            src="assets/img/icons/close_red.png" alt />
+        </div>
+      </div>
+    </div>
+    <!-- Fin modals principios KOF -->
+
+    <div id="mod_nuesStruct_1" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/base_mod_video.png" alt style="width: 100%" />
+          <div>
+            <!-- <img src="assets/img/mod_doomie.png" class="elem_info" style="top: 0%;width: 100%;left: 0%" alt> -->
+          </div>
+          <img id="cls_nuesStruct_1" class="cclose elem_click cls_nuesStruct w3-display-topright"
+            src="assets/img/icons/close.svg" alt />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_nuesStruct_2" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/base_mod_video.png" alt style="width: 100%" />
+          <div>
+            <!-- <img src="assets/img/mod_doomie.png" class="elem_info" style="top: 0%;width: 100%;left: 0%" alt> -->
+          </div>
+          <img id="cls_nuesStruct_2" class="cclose elem_click cls_nuesStruct w3-display-topright"
+            src="assets/img/icons/close.svg" alt />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_nuesStruct_3" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/base_mod_video.png" alt style="width: 100%" />
+          <div>
+            <!-- <img src="assets/img/mod_doomie.png" class="elem_info" style="top: 0%;width: 100%;left: 0%" alt> -->
+          </div>
+          <img id="cls_nuesStruct_3" class="cclose elem_click cls_nuesStruct w3-display-topright"
+            src="assets/img/icons/close.svg" alt />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_nuesStruct_4" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/base_mod_video.png" alt style="width: 100%" />
+          <div>
+            <!-- <img src="assets/img/mod_doomie.png" class="elem_info" style="top: 0%;width: 100%;left: 0%" alt> -->
+          </div>
+          <img id="cls_nuesStruct_4" class="cclose elem_click cls_nuesStruct w3-display-topright"
+            src="assets/img/icons/close.svg" alt />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_nuesStruct_5" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/base_mod_video.png" alt style="width: 100%" />
+          <div>
+            <!-- <img src="assets/img/mod_doomie.png" class="elem_info" style="top: 0%;width: 100%;left: 0%" alt> -->
+          </div>
+          <img id="cls_nuesStruct_5" class="cclose elem_click cls_nuesStruct w3-display-topright"
+            src="assets/img/icons/close.svg" alt />
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio Modales tipo video -->
+    <div id="mod_quienesSomos_1" class="w3-modal mod_quienesSomos" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-zoom" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <video controls id="vid_quienesSomos_1" class="vid_quienesSomos">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img id="cls_quienesSomos_1" class="cls_quienesSomos absolute" src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_compSaludable_1" class="w3-modal mod_compSaludable" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-zoom" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <video controls id="vid_compSaludable_1" class="vid_compSaludable">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img id="cls_compSaludable_1" class="cls_compSaludable absolute" src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="mod_plataTalento_1" class="w3-modal mod_plataTalento" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-zoom" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <video controls id="vid_plataTalento_1" class="vid_plataTalento">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img id="cls_plataTalento_1" class="cls_plataTalento absolute" src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+    <div id="mod_myKofVid_1" class="w3-modal mod_myKofVid" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-zoom" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <video controls id="vid_myKofVid_1" class="vid_myKofVid">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img id="cls_myKofVid_1" class="cls_myKofVid absolute" src="assets/img/icons/close_red.png" />
+        </div>
+      </div>
+    </div>
+    <!-- fin Modales tipo video -->
+
+    <!-- Todo: Inicio modal tip Código Ética -->
+    <div id="mod_etica_1" class="w3-modal" style="overflow: hidden; margin-top: 0">
+      <div class="w3-modal-content w3-animate-top" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <img src="assets/img/codigo-etica/modal_e.png" class="elem_info"
+            style="top: 0%; width: 50%; left: 0%; right: 0; margin: 0 auto" />
+          <img src="assets/img/icons/close.svg" id="cls_etica_1" class="cls_etica cclose animated infinite pulse" />
+        </div>
+      </div>
+    </div>
+    <!-- Todo: Fin modal tip Código Ética -->
+    <!-- Todo: Inicio modal UN ADN KOF -->
+    <!-- Todo: Fin modal tip Código Ética -->
+
+    <!-- Todo: Inicio modales Ciclo Flecha -->
+
+    <!-- Todo: Fin modales Ciclo Flecha -->
+
+    <!-- Todo: Inicio modales Sistema etica -->
+
+    <div id="mod_sisEt_1" class="w3-modal" style="overflow: hidden; margin-top: 0; padding: 0">
+      <div class="w3-animate-right" style="background-color: transparent; width: 70%; margin: auto">
+        <div class="w3-display-container mTop">
+          <img src="assets/img/sistema-integral-etica/mod_sisEt_1/MODAL.png" class="elem_info modal_etica" />
+          <img src="assets/img/icons/close_red.png" id="cls_sisEt_1"
+            class="cclose cls_sisEt elem_click animated infinite pulse" />
+        </div>
+      </div>
+    </div>
+    <div id="mod_sisEt_2" class="w3-modal" style="overflow: hidden; margin-top: 0; padding: 0">
+      <div class="w3-animate-right" style="background-color: transparent; width: 70%; margin: auto">
+        <div class="w3-display-container mTop">
+          <img src="assets/img/sistema-integral-etica/mod_sisEt_2/MODAL.png" class="elem_info modal_etica" />
+          <img src="assets/img/icons/close_red.png" id="cls_sisEt_2"
+            class="cclose cls_sisEt elem_click animated infinite pulse" />
+        </div>
+      </div>
+    </div>
+    <div id="mod_sisEt_3" class="w3-modal" style="overflow: hidden; margin-top: 0; padding: 0">
+      <div class="w3-animate-right" style="background-color: transparent; width: 70%; margin: auto">
+        <div class="w3-display-container mTop">
+          <img src="assets/img/sistema-integral-etica/mod_sisEt_3/MODAL.png" class="elem_info modal_etica" />
+          <img src="assets/img/icons/close_red.png" id="cls_sisEt_3"
+            class="cclose cls_sisEt elem_click animated infinite pulse" />
+        </div>
+      </div>
+    </div>
+    <audio class="fondo" id="fondo1" loop preload="auto" src="assets/aud/fondo.mp3"></audio>
+    <audio id="a__clic" src="assets/aud/clic.mp3"></audio>
+    <audio id="a__close" src="assets/aud/close.mp3"></audio>
+    <audio id="a__next" src="assets/aud/next.mp3"></audio>
+
+    <!-- Todo: Fin modales sistema etica -->
+    <!-- TODO: Modales PrimeroGente -->
+    <div class="w3-modal mod_soloKofs" style="overflow: hidden; margin-top: 0">
+      <div class="w3-animate-zoom w3-modal-content" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div class="divSoloKosito">
+            <img src="" class="map_soloKofs" />
+          </div>
+          <img src="assets/img/icons/close.svg" class="cls_soloKofs animated zoomIn" id="cls_flecha_1" />
+        </div>
+      </div>
+    </div>
+    <div class="w3-modal mod_prioridadesEst" style="overflow: hidden; margin-top: 0">
+      <div class="w3-animate-zoom w3-modal-content" style="background-color: transparent; width: 70%">
+        <div class="w3-display-container">
+          <div class="divprioridadesEst">
+            <img src="" class="map_prioridadesEst" />
+          </div>
+          <img src="assets/img/icons/close_red.png" class="cls_prioridadesEst animated zoomIn absolute"
+            id="cls_prioridadesEst" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="precache_index" class="hide">
+    <img src="assets/img/icons/loader.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/icons/on.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/fondo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/somos/txt1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/somos/logo.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/somos/experta.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/icons/btn_vide.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/fondo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/FONDO.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/lin_centro.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/botella.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/scroll.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/1979.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/1993.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/1994.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2003.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2007.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2010.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2011.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2012.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2013.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2015.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2016.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2017.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2018.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2021.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2022.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tiem_linea/2023.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/centro-america.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/colombia.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/Brasil.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/uruguay.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/argentina.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_1/mapa.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/poblacion/icono.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/poblacion/numero.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/poblacion/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/icono.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/numero.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/puntos-de-venta/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/plantas/icono.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/plantas/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/icono.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/numero.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_2/centros-de-distribucion/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/capital_humano/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/capital_humano/estadio.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/capital_humano/somos.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/capital_humano/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/evolucionamos/banner.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/evolucionamos/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/salpicadura_1.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/nuestro_proposito.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/txt_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/nuestra_vision.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/txt_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principios_kof.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_7.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_9.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/proposito/principio_10.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/icons/ints_clic.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/cuerpo_rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/icono_rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/cuerpo_negro.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/valorar_gente.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/lo_correcto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/fundador.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/crecimiento.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/seguridad.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/icono_negro.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/cuerpo_gris.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/trabajar_exc.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/apalancar.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/actuar_ag.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/entregar_res.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/icono_gris.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/trabajar_exc.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/apalancar.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/actuar_ag.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/entregar_res.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/icono_gris.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/textura.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/chica.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/textura_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/personas.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/texto_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/all_hands.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/hagamos_puente.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/semanas.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/rituales/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuestro-negocio/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuestro-negocio/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuestro-negocio/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuestro-negocio/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/clic.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_7.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/boton_8.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/glosario.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/boton-descarga.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/clic.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/glosario/qr_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_3/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_3/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/nuest_reg/parte_3/personas.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/future-ready/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/future-ready/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/future-ready/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/pleca_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/pleca_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/circle.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/prioridades-estrategicas/btn_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/title.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/marco-de-Sostenibilidad/n_7.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_71/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_71/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_71/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_72/title.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_72/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_72/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/7.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/text_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/line_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/line_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/slide_73/animar/line_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/diversidad-equidad/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/diversidad-equidad/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/diversidad-equidad/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/diversidad-equidad/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/acciones/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/acciones/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/acciones/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/image_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/pleca_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/image_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/pleca_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/image_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/text_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/tres-pilares/pleca_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/creemos.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/esquema.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/arg_img_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/argentina.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/brasil.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/ot-brasil.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/sudamerica.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/col-img_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/coca-img_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/mex-img_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/mexico.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/guatemala.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/onu-pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/2023-2024_sudamerica.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/talento-joven.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/colombia.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/onu/impacto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/icons/ints_clic.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/comportamiento-saludable/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/comportamiento-saludable/persona.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/comportamiento-saludable/play.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/comportamiento-saludable/da_click.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/texto_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/texto_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/texto_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/btn_sisEt_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/btn_sisEt_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/btn_sisEt_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/instruccion.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/flecha.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-integral-etica/textura.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/texto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_7.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_8.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_9.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/bandera_10.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/tel_blank.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_argentina.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_brasil.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_colombia.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_costa_rica.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_guatemala.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_mexico.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_nicaragua.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_panama.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_uruguay.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/numeros/num_venezuela.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/FOCO-TIPS.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/DA-CLIC-AL-CODIGO.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/codigo-etica/sitio_web.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/qr/titulo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/qr/qr_espanol.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/qr/qr_portugues.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/qr/persona.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/compliance/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/compliance/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/compliance/image.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/compliance/fondo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/integridad-global/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/integridad-global/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/integridad-global/bullets.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/integridad-global/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/imagen_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/recuerda.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/recuerda/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/somos/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/temas-compliance/somos/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/text_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/desarrollo-dentro-kof/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/text_base.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/mono.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/mono.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/bienestarIntegral/btn_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/ciclo-desem/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/ciclo-desem/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/ciclo-desem/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/parrafo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/btn_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/text_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/btn_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/text_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/btn_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/text_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/inicioCiclo/rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/herramientas/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/herramientas/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/herramientas/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/plataformaTalento/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/plataformaTalento/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/plataformaTalento/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/btn_video.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/plataformaTalento/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/btn_video.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKofVideo/pleca.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/docManager/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/docManager/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/docManager/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/docManager/rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKof/foto.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKof/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/myKof/bullets.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/tilt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/txt_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/txt_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/txt_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/universidad-femsa/txt_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_1.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_2.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_4.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_5.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/aulaKof/txt_6.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/linkedin/imagen.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/linkedin/text.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/linkedin/rojo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cierre/hombre.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cierre/mujer.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cierre/tlt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cierre/txt.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/modal_cliente_primero.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/icons/close_red.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/principios/modal_valorar_gente.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/scrollHorizontal/fondo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/sistema-comercial-preferido/mapa.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/adn-kof.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/Imagen17.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/fondo_3.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/cadena-de-valor/flecha-fondo.png" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-1.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-2.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-3.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-4.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-5.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-6.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-7.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/navbar/nav-img-8.jpg" style="width: 0; height: 0" alt />
+    <img src="assets/img/fondos-animados/fondo-negro.gif" style="width: 0; height: 0" alt />
+    <img src="assets/img/fondos-animados/fondo_blanco.gif" style="width: 0; height: 0" alt />
+  </div>
+
+  <script src="assets/js/libs/jquery_2.2.4.min.js"></script>
+  <script src="assets/js/libs/jquery.waitforimages.js"></script>
+  <script src="assets/js/libs/pushin.min.js"></script>
+  <script src="assets/js/libs/jquery.animate.min.js"></script>
+  <script src="assets/js/libs/swiper-bundle.min.js"></script>
+  <script src="assets/js/libs/aos.js"></script>
+  <script src="assets/js/libs/confetti.js"></script>
+  <script src="assets/js/libs/minified/gsap.min.js"></script>
+  <script src="assets/js/libs/minified/ScrollTrigger.min.js"></script>
+  <script src="assets/js/libs/minified/Observer.min.js"></script>
+  <script src="assets/js/libs/minified/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/libs/minified/CSSRulePlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/libs/SCORM_API_wrapper.min.js"></script>
+  <script src="assets/js/funciones_base_scorm.js"></script>
+  <script src="assets/js/ctrlIndex.js"></script>
+
+  <script src="assets/js/gsapAnimations.js"></script>
+  <script src="assets/js/navbar.js"></script>
+
+</body>
+
+</html>

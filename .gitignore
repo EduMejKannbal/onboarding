@@ -1,0 +1,6 @@
+* .zip
+* .psd
+* .txt
+build
+dist
+node_modules

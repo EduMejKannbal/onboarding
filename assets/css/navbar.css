@@ -1,0 +1,180 @@
+#nav-toggler {
+  -webkit-appearance: none;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 1010;
+  font-size: 3rem;
+}
+
+#nav-toggler:checked {
+  transform: rotate(180deg);
+}
+
+#nav-toggler:checked::before {
+  content: "\f00d";
+  color: #fff;
+  transition: 0.3s linear 0.3s;
+}
+
+#nav-toggler:checked ~ .navbar {
+  left: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  padding: 3% 7%;
+  justify-content: center;
+  background: #e61b1f;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../img/navbar/nav-img-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.main .accordion {
+  display: none;
+}
+.container-nav {
+  display: flex;
+  width: 100%;
+  overflow-y: auto;
+}
+.main .accordion {
+  height: auto;
+  width: 600px;
+}
+.main .accordion-item {
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+.main .accordion-item.active .title,
+.main .accordion-item:hover .title{
+  border-bottom: 1.3px solid #d4d4d4;
+}
+.main .accordion-item .title {
+  font-size: 1.9rem;
+  /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
+  font-weight: bolder;
+  position: relative;
+  letter-spacing: 2px;
+  line-height: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Garage-gothic';
+}
+.main .accordion-item .title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #0c0a09;
+  transition: 0.3s linear;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.main .accordion-item .title:hover::before {
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+}
+.main .accordion-item .title i.fas {
+  font-size: 0.9rem;
+  transform: translateX(-50%) rotate(0);
+  transition: transform 0.15s ease;
+  color: black;
+}
+.main .accordion-item .paragraph {
+  font-family: 'Garage-gothic';
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: inherit;
+  display: none;
+  padding: 3px;
+  transition: 0.3s ease all;
+}
+.main .accordion-item.active .paragraph:hover{
+  color: #1b1a1a;
+}
+.main .accordion-item.active .title,
+.main .accordion-item.active .paragraph{
+  color: white;
+}
+
+.main .accordion-item:not(.active) .title,
+.main .accordion-item:not(.active) .paragraph {
+  color: black;
+}
+.main .accordion-item:not(.active) .title::before,
+.main .accordion-item:not(.active) .paragraph::before {
+  color: rgb(255, 255, 255);
+}
+.main .accordion-item .title i.fas {
+  color: black;
+}
+.main .accordion-item:hover .title i.fas {
+  color: #ffffff;
+}
+.main .accordion-item.active .title i.fas {
+  transform: translateX(-50%) rotate(180deg);
+  color: rgb(255, 255, 255);
+}
+
+.main .accordion-item.active .paragraph {
+  display: block;
+}
+
+@media (max-width: 962px) {
+  .main .accordion {
+    height: auto;
+    width: 390px;
+  }
+  .navbar {
+    padding: 2% 10%;
+    align-items: start;
+  }
+  .main .accordion-item .title {
+    font-size: 1rem;
+  }
+  .main .accordion-item .paragraph{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main .accordion-item .title {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1450px) {
+}
+@media (min-width: 1451px) {
+  .main .accordion-item .title {
+    font-size: 3rem;
+  }
+  .main .accordion {
+    height: auto;
+    width: 800px;
+  }
+  .main .accordion-item .paragraph {
+    font-size: 2rem;
+  }
+}
